@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Quicksand Bold";
+    src: url("fonts/Quicksand_Bold.otf") format('opentype');
+}
+
+@font-face {
+    font-family: "Universe Fifty Seven";
+    src: url("fonts/OPTIUniversFiftySeven.otf") format('opentype');
+}
+
+:root {
+    --scale-viewport: 1;
+    --scale-rem: 1;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.d-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bg-white{
+    color: white;
+}
+
+.text-orange{
+    color: #e28526;
+}
+
+.bg-orange{
+    background-color: #e28526;
+}
+
+.btn-orange:hover{
+    color: white;
+    background-color: #e28526;
+    border: 2px solid #e28526;
+}
+
+.text-blue{
+    color: #016972;
+}
+
+.bg-blue{
+    background-color: #016972;
+}
+
+.text-darkgreen{
+    color: #01413f;
+}
+
+.bg-darkgreen{
+    background-color: #01413f;
+}
+
+.column-padding{
+    padding-top: calc(7vh * var(--scale-viewport));
+    padding-bottom: calc(7vh * var(--scale-viewport));
+    padding-left: calc(4vw* var(--scale-viewport));
+    padding-right: calc(4vw* var(--scale-viewport));
+}
+
+.title{
+    display: block;
+    font-size: calc(2rem * var(--scale-rem));
+    font-family: "Universe Fifty Seven", sans-serif;
+    color:#f3f3f3;
+    margin-top: calc(5vh * var(--scale-viewport));
+    margin-bottom: calc(5vh * var(--scale-viewport));
+}
+
+.quicksandbold-font{
+    font-family: "Quicksand Bold", sans-serif;
+    font-size: calc(1rem * var(--scale-rem));
+    color: #f2f2f290;
+}
+
+.btn{
+    border: 0;
+    font-family: "Quicksand Bold", sans-serif;
+    font-size: calc(1.2rem * var(--scale-rem));
+    padding-top: calc(0.60rem * var(--scale-rem));
+    padding-bottom: calc(0.60rem * var(--scale-rem));
+    padding-right: calc(1.1rem * var(--scale-rem));
+    padding-left: calc(1.1rem * var(--scale-rem));
+    margin-top: calc(12vh * var(--scale-viewport));
+    border-radius: 30px;
+}
+
+ @media screen and (max-width: 767px) {
+    .d-grid{
+        grid-template-columns: 1fr;
+    }
+    :root {
+        --scale-viewport: 2;
+        --scale-rem: 2;
+    }
+ }
+
+
+ @media screen and (max-width: 440px) {
+    :root {
+        --scale-viewport: 1.5;
+        --scale-rem: 1.5;
+    }
+ }
+
+
+ @media screen and (min-width: 1000px) {
+    :root {
+        --scale-viewport: 1.45;
+        --scale-rem: 1.45;
+    }
+ }
