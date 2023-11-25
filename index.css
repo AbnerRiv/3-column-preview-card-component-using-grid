@@ -36,7 +36,7 @@
 .btn-orange:hover{
     color: white;
     background-color: #e28526;
-    border: 2px solid #e28526;
+    border: 2px solid white;
 }
 
 .text-blue{
@@ -47,12 +47,24 @@
     background-color: #016972;
 }
 
+.btn-blue:hover{
+    color: white;
+    background-color: #016972;
+    border: 2px solid white;
+}
+
 .text-darkgreen{
     color: #01413f;
 }
 
 .bg-darkgreen{
     background-color: #01413f;
+}
+
+.btn-darkgreen:hover{
+    color: white;
+    background-color: #01413f;
+    border: 2px solid white;
 }
 
 .column-padding{
